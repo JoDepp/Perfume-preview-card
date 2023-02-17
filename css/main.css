@@ -172,7 +172,7 @@ i {
 }
 
 /*tablet and larger sizes*/
-@media (min-width: 875px) {
+@media only screen and (min-width : 900px)  {
 
 .content {
   display: flex;
@@ -183,8 +183,18 @@ i {
 .product-img {
 width: 300px;
 height: 450px;
+border-bottom-left-radius: 15px;
+border-top-right-radius: 0;
 }
 
+.description {
+  margin: 30px;
+  width: 230px;
+}
+.checkout-section {
+  width: 235px;
+  height: 38px;
+}
 }
 
 
