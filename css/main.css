@@ -94,11 +94,12 @@ body {
   padding: 0;
 }
 
-.product-img {
+.product-image-source {
   width: 355px;
   height: 242px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  object-fit: cover;
  }
 
 .content {
@@ -181,10 +182,14 @@ i {
 }
 
 .product-img {
+  width: 300px;
+  height: 100%;
+}
+
+.product-image-source{
 width: 300px;
 height: 450px;
-border-bottom-left-radius: 15px;
-border-top-right-radius: 0;
+border-radius: 15px 0px 0px 15px;
 }
 
 .description {

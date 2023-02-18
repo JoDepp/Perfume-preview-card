@@ -21,13 +21,12 @@
 <body>
   <main>
     <div class="content">
-   
-      <img class="product-img" srcset="images/image-product-mobile.jpg 686w, images/image-product-desktop.jpg 600w" 
-      sizes="(max-width: 800) 686px, (max-width: 1440px) 600px"
-      src="images/image-product-desktop.jpg"
-      alt="perfume bottle"
-      />
-      
+      <picture class="product-image">
+        <source class="product-img-mobile" srcset="images/image-product-mobile.jpg" media="(max-width: 600px)">
+        <source class="product-img-desktop" srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">
+        <img class="product-image-source" src="images/image-product-desktop.jpg" alt="perfume bottle">
+      </picture>
+
       <div class="description">
         <h2>perfume</h2>
         <h1>Gabrielle Essence Eau De Parfum</h1>
